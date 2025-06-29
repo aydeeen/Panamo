@@ -1,5 +1,4 @@
 ## Panamo Website
-======
 
 A custom theme for Panamo.
 
