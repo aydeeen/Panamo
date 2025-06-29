@@ -1,0 +1,14 @@
+{
+    "name": "acf/calendly",
+    "title": "Calendly",
+    "category": "formatting",
+    "icon": "calendar",
+    "keywords": ["calendly"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "calendly.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

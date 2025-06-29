@@ -1,0 +1,14 @@
+{
+    "name": "acf/contact",
+    "title": "Contact",
+    "category": "formatting",
+    "icon": "visibility",
+    "keywords": ["contact"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "contact.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

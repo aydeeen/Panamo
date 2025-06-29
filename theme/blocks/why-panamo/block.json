@@ -1,0 +1,14 @@
+{
+    "name": "acf/why-panamo",
+    "title": "Why Panamo",
+    "category": "formatting",
+    "icon": "yes",
+    "keywords": ["why", "panamo"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "why-panamo.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

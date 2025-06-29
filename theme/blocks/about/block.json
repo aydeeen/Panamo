@@ -1,0 +1,14 @@
+{
+    "name": "acf/about",
+    "title": "About",
+    "category": "formatting",
+    "icon": "star-filled",
+    "keywords": ["about"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "about.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

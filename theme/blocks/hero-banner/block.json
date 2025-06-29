@@ -1,0 +1,14 @@
+{
+    "name": "acf/hero-banner",
+    "title": "Hero Banner",
+    "category": "formatting",
+    "icon": "format-image",
+    "keywords": ["hero", "banner"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "hero-banner.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

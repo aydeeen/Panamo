@@ -1,0 +1,14 @@
+{
+    "name": "acf/clients",
+    "title": "Clients",
+    "category": "formatting",
+    "icon": "superhero",
+    "keywords": ["clients"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "clients.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

@@ -1,0 +1,112 @@
+/**
+ * Custom styles to immediately follow Tailwind’s `components` layer
+ *
+ * “Add more opinionated, complex classes like buttons, form controls, alerts,
+ * etc; the sort of pre-built components you often see in other frameworks that
+ * you might need to override with utility classes.”
+ *
+ * — from https://tailwindcss.com/docs/plugins#adding-components
+ */
+
+/**
+ * Post title styles
+ *
+ * These will be applied to all headings with a `page-title` or `entry-title`
+ * class on the frontend and to the post title in the block editor.
+ *
+ * The supplied styles are meant to match the default `h1` classes from
+ * Tailwind Typography.
+ */
+.page-title,
+.entry-title {
+	@apply max-w-content mx-auto mb-6 text-3xl font-extrabold text-neutral-900;
+}
+
+/* Heading */
+.heading {
+	@apply font-bold text-center mx-auto ~text-5xl/8xl ~mb-8/12;
+}
+
+/* Small Heading */
+.heading-small {
+	@apply font-bold text-center mx-auto ~text-2xl/5xl ~mb-8/12;
+}
+
+/* Form */
+.wpcf7 {
+	.wpcf7-form {
+		@apply flex flex-wrap justify-center w-full max-w-5xl mx-auto;
+
+		&.sent {
+			.wpcf7-form-control-wrap {
+				@apply hidden;
+			}
+		}
+	}
+
+	.wpcf7-grid {
+		@apply w-full grid gap-x-6 grid-cols-1 md:grid-cols-2;
+	}
+
+	input {
+		@apply block w-full px-4 py-3 mb-2 leading-tight border appearance-none font-semibold rounded basis-5;
+
+		&:focus {
+			@apply outline-none;
+		}
+	}
+
+	textarea {
+		@apply block w-full px-4 py-3 mb-3 leading-tight rounded border appearance-none font-semibold;
+
+		&:focus {
+			@apply outline-none;
+		}
+	}
+
+	.wpcf7-submit {
+		@apply py-2 mr-auto w-40 -mt-1 text-lg font-bold text-white border-2 border-transparent bg-main rounded shadow-md cursor-pointer transition-colors;
+
+		&:hover {
+			@apply bg-white text-main border-main shadow-lg;
+		}
+
+		&:focus {
+			@apply outline-none;
+		}
+	}
+
+	.wpcf7-form-control-wrap {
+		@apply w-full mb-4;
+	}
+
+	.wpcf7-not-valid {
+		@apply border-main;
+	}
+
+	.wpcf7-not-valid-tip {
+		@apply font-semibold text-xs text-main block mb-1;
+	}
+
+	.wpcf7-response-output {
+		@apply rounded border text-sm font-bold mt-0 my-auto relative;
+
+		&.wpcf7-validation-errors {
+			@apply border-main text-main;
+		}
+
+		&.wpcf7-mail-sent-ok {
+			@apply text-main border-main;
+		}
+	}
+}
+
+/* Recaptcha */
+.grecaptcha-badge { 
+    @apply invisible;
+}
+
+/* Button */
+.btn {
+	@apply rounded-md relative text-pretty flex h-[50px] max-w-40 w-full text-center items-center justify-center overflow-hidden bg-main font-medium text-white shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear hover:bg-white hover:text-main hover:shadow-main hover:before:border-[25px] [&_span]:relative [&_span]:z-10;
+}
